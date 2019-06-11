@@ -18,7 +18,7 @@ class EventManager {
         let eventId = evento._id
         $.post('/main/all/delete/'+eventId, {id: eventId}, (response) => {
             alert(response)
-            this.obtenerDataInicial();
+            location.reload()
         })
     }
 
@@ -53,7 +53,7 @@ class EventManager {
                     start: start,
                     end: end
                 }
-            
+
             $.post(url, ev, function(confirm) {
                 alert(confirm);
                 location.reload()
