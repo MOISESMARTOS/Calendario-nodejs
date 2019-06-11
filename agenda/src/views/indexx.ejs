@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Neucha" rel="stylesheet">
+  </head>
+  <body>
+    <div class="loginContainer">
+      <div class="loginTitle">Inicio de Sesión</div>
+      <% if(message.length > 0) { %>
+        <div class="alerta">
+          <%= message  %>
+        </div>
+      <%  }  %>
+
+      <form class="" action="/login" method="post">
+        <div class="fields-Container">
+          <label for="email" class="mod">Email</label>
+          <input type="email" name="email">
+        </div>
+        <div class="fields-Container">
+          <label for="password" class="mod">Password</label>
+          <input type="password" name="password">
+        </div>
+        <input type="submit" value="Login" class="loginButton">
+      </form>
+
+      <a href="/signup" class="signup">Crea una cuenta</a>
+
+    </div>
+    <script src="/js/jquery.js"></script>
+  </body>
+</html>

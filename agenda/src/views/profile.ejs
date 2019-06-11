@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mi Perfil</title>
+    <% include partials/head %>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center">
+        <h1>Pagina de perfil de usuario</h1>
+        <a href="/logout" class="btn btn-light btn-sm">Salir</a>
+      </header>
+
+      <hr>
+
+      <div class="container">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">
+                <span class="fa fa-user"> Local</span>
+              </h3>
+              <p>
+                <strong>id</strong>: <%= user._id %> <br>
+                <strong>Correo</strong>: <%= user.local.email %> <br>
+                <strong>Pass</strong>: <%= user.local.password %> <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
