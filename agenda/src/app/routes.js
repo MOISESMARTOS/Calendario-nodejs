@@ -87,7 +87,7 @@ module.exports = (app, passport) => {//app y express ya se configuraron en el se
             res.status(500)
             res.json(error)
         }
-        res.send("Registro actualizado " + req.params.eventId);
+        res.send("Evento actualizado");
       })
   });
 
@@ -99,7 +99,7 @@ module.exports = (app, passport) => {//app y express ya se configuraron en el se
             res.status(500)
             res.json(error)
         }
-        res.send("Registro eliminado " + req.params.eventId)
+        res.send("Evento eliminado ")
     })
   })
 

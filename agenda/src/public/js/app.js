@@ -53,8 +53,7 @@ class EventManager {
                     start: start,
                     end: end
                 }
-            console.log(start + ' y ' + title);
-            console.log(ev);
+            
             $.post(url, ev, function(confirm) {
                 alert(confirm);
                 location.reload()
